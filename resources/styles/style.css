@@ -1,0 +1,186 @@
+body {
+    overflow-y: hidden;
+}
+
+/* Navbar */
+
+@media (max-width: 768px) {
+
+    /* CSS styles to apply to screens with a width of 768px or less */
+    .navDesktop {
+        display: none !important;
+    }
+
+    /* more styles... */
+}
+
+@media (min-width: 769px) {
+
+    /* CSS styles to apply to screens with a width of 768px or less */
+    .navMobile {
+        display: none !important;
+    }
+
+    /* more styles... */
+}
+
+.navDesktop {
+    width: 280px;
+}
+
+.navMobile {
+    width: 4.5rem;
+}
+
+.navbar-divider {
+    width: 0.1em;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .1);
+    border: solid rgba(0, 0, 0, .15);
+    border-width: 1px 0;
+    box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+    flex-shrink: 0;
+}
+
+.navbar-logo {
+    vertical-align: -.125em;
+    fill: currentColor;
+}
+
+/* Main */
+
+main {
+    padding: 1em;
+    width: 100%;
+    height: 100vh;
+    overflow-y: auto;
+}
+
+.carousel-item>img {
+    filter: brightness(70%);
+    -webkit-filter: brightness(70%);
+    object-fit: cover;
+    max-height: 350px;
+}
+
+.carousel-caption {
+    display: block !important;
+    /* Hace que el texto no desaparezca, comportamiento de Bootstrap */
+}
+
+.title {
+    margin-bottom: 0.5em;
+}
+
+/* Movie Container */
+
+.moviesContainer {
+    height: 225px;
+    overflow-y: hidden;
+    justify-content: space-evenly;
+}
+
+.moviesContainer>a {
+    max-width: 150px;
+    transition: 0.25s;
+    margin-right: 0.15em;
+}
+
+.moviesContainer>a:hover {
+    /* max-width: 155px; */
+    transition: 0.25s;
+}
+
+.moviesContainer>a>img {
+    filter: brightness(70%);
+    -webkit-filter: brightness(70%);
+    object-fit: cover;
+    width: auto;
+    transition: 0.1s;
+}
+
+.moviesContainer>a:hover>img {
+    filter: brightness(100%);
+    -webkit-filter: brightness(100%);
+    transition: 0.1s;
+    transform: scale(105%);
+}
+
+.moviesContainer>a:hover>div {
+    display: none;
+}
+
+.moviesContainer>a>div {
+    position: relative;
+    bottom: 8em;
+}
+
+.moviesContainer>a {
+    /* Texto */
+    text-align: center;
+}
+
+.fullMoviesContainer {
+    /* justify-content: center; */
+    height: auto;
+    overflow-x: hidden;
+}
+
+.fullMoviesContainer>a {
+    height: 225px;
+    margin-bottom: 1em;
+}
+
+/*
+
+Búsqueda
+
+*/
+#toolbar {
+    display: flex;
+    justify-content: space-around;
+}
+
+#searchContainer>form {
+    width: 50%;
+}
+
+/*
+
+Página de película
+
+*/
+
+.moviePage {
+    background-image: linear-gradient(rgb(69, 69, 69), rgb(0, 0, 0));
+    padding: 1em;
+    border-radius: 1em;
+    justify-content: center;
+    display: flex;
+    color: white;
+    align-items: center;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.moviePage>img {
+    width: 45%;
+    height: 95%;
+    object-fit: cover;
+    border-radius: 0.5em;
+    margin-right: 0.5em;
+}
+
+.moviePage>div {
+    text-align: center;
+    height: fit-content;
+    padding: 1em;
+}
+
+@media (max-width: 700px) {
+
+    .moviePage {
+        flex-direction: column;
+        height: auto;
+    }
+}

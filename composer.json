@@ -1,0 +1,13 @@
+{
+    "name": "daw/mediahub",
+    "description": "Gestión de multimedia",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Daw\\Mediahub\\": "src/",
+            "Daw\\Mediahub\\Models\\": "src/models/",
+            "Daw\\Mediahub\\Controllers\\": "src/controllers/"
+        }
+    },
+    "require": {}
+}

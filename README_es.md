@@ -1,5 +1,5 @@
 
-<p align="center"><b>English</b> - <a href="./README_es.md">Español</a></p>
+<p align="center"><a href="./README.md">English</a> - <b>Español</b></p>
 
 > **Repository archived**
 > 
